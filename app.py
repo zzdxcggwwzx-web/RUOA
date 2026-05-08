@@ -32,3 +32,15 @@ if prompt := st.chat_input("มีอะไรให้พัดช่วย บ
     except Exception as e:
         st.error(f"เกิดข้อผิดพลาด: {e}")
       
+# ส่วนที่เรียกใช้ AI
+if prompt := st.chat_input("มีอะไรให้พัดช่วย บอกมาได้เลย!"):
+    # 1. แสดงข้อความที่เราพิมพ์
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+    # 2. ให้ AI คิดคำตอบ
+    response = model.generate_content(prompt)
+
+    # 3. จุดสำคัญ! ต้องสั่งให้มัน "แสดงคำตอบ" ออกมาด้วย
+    with st.chat_message("assistant"):
+        st.markdown(response.text)  # <--- บรรทัดนี้ต้องมีครับ!
