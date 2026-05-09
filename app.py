@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # ตั้งค่า API Key ที่ส่งมาให้
-API_KEY = "AIzaSyCUCnMrVu7-qboB6p-qLvue9R2LT2G6TD0"
+API_KEY ="AIzaSyCUCnMrVu7-qboB6p-qLvue9R2LT2G6TD0"
 genai.configure(api_key=API_KEY)
 
 st.title("🤖 พัด AI Assistant")
@@ -35,4 +35,4 @@ if prompt := st.chat_input("มีอะไรให้พัดช่วย บ
             st.session_state.messages.append({"role": "assistant", "content": response.text})
         except Exception as e:
             st.error(f"เกิดข้อผิดพลาด: {e}")
-          
+          AIzaSyCUCnMrVu7-qboB6p-qLvue9R2LT2G6TD0IzaSyCUCnMrVu7-qboB6p-qLvue9R2LT2G6TD0
