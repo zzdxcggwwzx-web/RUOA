@@ -12,7 +12,7 @@ st.caption("ฉลาดขึ้น จริงใจขึ้น พร้อ
 try:
     model = genai.GenerativeModel('gemini-1.5-flash')
 except Exception as e:
-    # ถ้ายังติด 404 ให้ใช้ตัวสำรองที่เสถียรที่สุด
+    # ถ้ายังติด  ให้ใช้ตัวสำรองที่เสถียรที่สุด
     model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
 if "messages" not in st.session_state:
