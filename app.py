@@ -1,7 +1,8 @@
 import streamlit as st
 import google.generativeai as genai
 
-# ⚠️ สำคัญมาก: เอา API Key ที่ก๊อปมาวางในเครื่องหมายคำพูดด้านล่างนี้ครับ
+# ⚠️ สำคัญมาก: เอา API Key AIzaSyCUCnMrVu7-qboB6p-qLvue9R2LT2G6TD0IzaSyCUCnMrVu7-qboB6p-qLvue9R2LT2G6TD0
+                                                                                         ^
 genai.configure(api_key="วาง_API_KEY_ที่นี่")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
