@@ -35,4 +35,3 @@ if prompt := st.chat_input("มีอะไรให้พัดช่วย บ
             st.session_state.messages.append({"role": "assistant", "content": response.text})
         except Exception as e:
             st.error(f"เกิดข้อผิดพลาด: {e}")
-          AIzaSyCUCnMrVu7-qboB6p-qLvue9R2LT2G6TD0IzaSyCUCnMrVu7-qboB6p-qLvue9R2LT2G6TD0
