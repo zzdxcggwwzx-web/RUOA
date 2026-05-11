@@ -1,5 +1,5 @@
 import numpy as np
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import ...) LinearRegression
 
 # 1. เตรียมข้อมูลสมมติ (เช่น x คือชั่วโมงอ่านหนังสือ, y คือคะแนนสอบ)
 # รูปแบบข้อมูลต้องเป็น 2D array สำหรับ X
