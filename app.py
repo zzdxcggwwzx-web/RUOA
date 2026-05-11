@@ -1,5 +1,8 @@
 import numpy as np
-from sklearn.linear_model import ...) LinearRegression
+from streamlit
+google-generativeai
+scikit-learn
+LinearRegression
 
 # 1. เตรียมข้อมูลสมมติ (เช่น x คือชั่วโมงอ่านหนังสือ, y คือคะแนนสอบ)
 # รูปแบบข้อมูลต้องเป็น 2D array สำหรับ X
@@ -15,6 +18,5 @@ model.fit(X, y)
 # 4. ลองให้ AI ทำนายดู (Prediction)
 # อยากรู้ว่าถ้าอ่านหนังสือ 6 ชั่วโมง จะได้คะแนนเท่าไหร่?
 hours = np.array([[6]])
-prediction = model.predict(hours)
-
+prediction = model.predict(houfrom
 print(f"ถ้าอ่าน 6 ชม. AI บอกว่าน่าจะได้คะแนนประมาณ: {prediction[0]:.2f}")
